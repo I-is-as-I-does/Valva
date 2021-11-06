@@ -1,6 +1,6 @@
 /* Vâlvă --demo | (c) 2021 I-is-as-I-does | MIT License */
 
-import * as Valva from "./../src/Valva.js";
+import * as Valva from "./Valva.js";
 
 function getHeader(text, num = 2) {
   let hd = document.createElement("H" + num);
