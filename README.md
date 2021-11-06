@@ -7,7 +7,7 @@ When a full-fledge framework is overkill, but relying on CSS not an option.
 
 ## Demo
 
-Quick and dirty demo available in `docs/`.
+Quick and dirty demo available in `docs/` or as a [Github Page](https://i-is-as-i-does.github.io/Valva/)
 
 ## Overview
 
