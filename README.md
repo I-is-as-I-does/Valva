@@ -7,7 +7,7 @@ When a full-fledge framework is overkill, but relying on CSS not an option.
 
 ## Demo
 
-Quick and firty demo available in `demo/`.
+Quick and firty demo available in `doc/`.
 
 ## Overview
 
