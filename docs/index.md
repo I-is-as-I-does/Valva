@@ -7,7 +7,8 @@ When a full-fledge framework is overkill, but relying on CSS not an option.
 
 ## Demo
 
-Quick and dirty demo available in `docs/`.
+[Quick and dirty demo →](./demo.html)  
+[Github repository →](https://github.com/I-is-as-I-does/Valva)
 
 ## Overview
 
@@ -69,13 +70,10 @@ mutationPromise(parent, child, placeAction, callback = null)
 resetDisplay(elm)
 ```
 
-## Contributing
-
-Sure! You can take a loot at [CONTRIBUTING](CONTRIBUTING.md).
-
 ## License
 
-This project is under the MIT License; cf. [LICENSE](LICENSE) for details.
+This project is under the MIT License.  
+(c) I-is-as-I-does
 
-![John Everett Millais, *The Apparition*, 1895](./docs/John-Everett-Millais-The-Apparition-1895.jpg)  
+![John Everett Millais, *The Apparition*, 1895](John-Everett-Millais-The-Apparition-1895.jpg)  
 John Everett Millais, *The Apparition*, 1895
