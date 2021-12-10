@@ -91,6 +91,7 @@ export function fadeOut(elm, callback = null) {
   (function fade() {
     if ((elm.style.opacity -= 0.1) < 0) {
       elm.style.display = "none";
+      elm.style.opacity = 1;
       if (typeof callback === "function") {
         callback();
       }
@@ -228,7 +229,7 @@ export function diversionToggle(
   reverse = false
 ) {
   if (typeof callback !== "function") {
-    callback = function () { };
+    callback = function () {};
   }
   var methods = [easeOut, easeIn];
   if (!ease) {
@@ -272,6 +273,13 @@ export function insertDiversion(
   };
   return mutationPromise(parent, child, placeAction, placeCallback);
 }
+export function heightBasedDisplay(elm, preHeight, newHeight, callback = null){
+  if (preHeight === newHeight) {
+    fadeIn(elm, callback);
+  } else {
+    easeIn(elm, 200, callback);
+  }
+}
 export function replaceDiversion(oldElm, newElm, callback = null) {
   newElm.style.opacity = 0;
 
@@ -282,11 +290,7 @@ export function replaceDiversion(oldElm, newElm, callback = null) {
   };
   var placeCallback = function () {
     var newh = newElm.offsetHeight;
-    if (newh === preh) {
-      fadeIn(newElm, callback);
-    } else {
-      easeIn(newElm, 200, callback);
-    }
+    heightBasedDisplay(newElm, preh, newh, callback);
   };
   var transcallback = function () {
     mutationPromise(parent, newElm, placeAction, placeCallback);
@@ -299,7 +303,7 @@ export function mutationPromise(parent, child, placeAction, callback = null) {
     parent = document.body;
   }
 
-  var tmpclass = "m" + Math.random().toString(20).substr(2);
+  var tmpclass = "m" + Math.random().toString(20).substring(2);
   child.classList.add(tmpclass);
 
   return new Promise((resolve) => {
