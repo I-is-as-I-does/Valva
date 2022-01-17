@@ -40,7 +40,7 @@ Valva
 `dist/Valva.js` | `dist/Valva.min.js`  
   
 ValvaAs  
-contains aliases and support for Valva v.1.0
+contains aliases and support for Valva v.1.0  
 `dist/ValvaAs.js` | `dist/ValvaAs.min.js` 
 
 ### Bonus  
@@ -52,48 +52,32 @@ Vue 3 component in `src/vue`
 \* = required  
 `type` = ease, fade or ease (aka slide+fade)  
   
-Fade-in, slide-down or ease-in, depending on {type} 
 ```js
+// Fade-in, slide-down or ease-in, depending on {type} 
 vShow(elm*, type, duration, callback, timing)
-```
 
-Fade-out, slide-up or ease-out, depending on {type} 
-```js
+// Fade-out, slide-up or ease-out, depending on {type} 
 vHide(elm*, type, duration, callback, timing)
-```
 
-Fade-toggle, slide-toggle or ease-toggle, depending on {type} 
-```js
+// Fade-toggle, slide-toggle or ease-toggle, depending on {type} 
 vToggle(elm*, type, duration, callback, timing)
-```
 
-Toggle visibility, wait for {delay}, toggle back
-```js
+// Toggle visibility, wait for {delay}, toggle back
 vTempToggle(elm*, type, delay, duration, callback, timing)
-```
 
-Toggle visibility, resolve {callback}, toggle back
-```js
+// Toggle visibility, resolve {callback}, toggle back
 vToggleResolve(elm*, callback, type, duration1, duration2, timing, reverse)
-```
 
-Smooth append element to DOM
-```js
+// Smooth append element to DOM
 vPlace(parent*, child*, prepend, type, duration, callback,timing) 
-```
 
-Smooth replace element in DOM
-```js
+// Smooth replace element in DOM
 vReplace(oldElm*, newElm*, duration, callback, timing)
-```
 
-Will `fade` if {elm} height = {prevHeight}, `ease` otherwise
-```js
+// Will `fade` if {elm} height = {prevHeight}, `ease` otherwise
 vShowAdapt(elm*, prevHeight*, duration, callback, timing)
-```
 
-Mesmerizing airport letter board effect
-```js
+// Mesmerizing airport letter board effect
 vSplitFlap(elm*, text*, speed) 
 ```
 
