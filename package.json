@@ -1,5 +1,5 @@
 {
-  "name": "valva",
+  "name": "@i-is-as-i-does/valva",
   "version": "1.2.0",
   "description": "Vâlvă is a small JS library for elegant transitions.",
   "main": "dist/Valva.min.js",
