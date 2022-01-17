@@ -1,0 +1,36 @@
+{
+  "name": "valva",
+  "version": "1.2.0",
+  "description": "Vâlvă is a small JS library for elegant transitions.",
+  "main": "dist/Valva.min.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/I-is-as-I-does/Valva.git"
+  },
+  "keywords": [
+    "transition",
+    "slideup",
+    "slidedown",
+    "splitflap",
+    "fadein",
+    "fadeout",
+    "easein",
+    "easeout"
+  ],
+  "author": "i-is-as-i-does",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/I-is-as-I-does/Valva/issues"
+  },
+  "homepage": "https://github.com/I-is-as-I-does/Valva#readme",
+  "devDependencies": {
+    "eslint": "^8.7.0",
+    "eslint-plugin-vue": "^8.3.0"
+  }
+}

@@ -1,6 +1,5 @@
 /* Vâlvă --demo | (c) 2021 I-is-as-I-does | MIT License */
 
-import * as Valva from "./Valva.js";
 
 function getHeader(text, num = 2) {
   let hd = document.createElement("H" + num);
@@ -87,8 +86,8 @@ anmtn.forEach((am) => {
   select1.append(getOption(am));
 });
 
-var duratinp = getNumInp(200);
-var delayinp = getNumInp(400);
+var duratinp = getNumInp(400);
+var delayinp = getNumInp(800);
 delayinp.disabled = true;
 
 var callbackinp = getCheckbox();
@@ -173,7 +172,7 @@ divrbtn.addEventListener("click", function () {
         getLi("I'm just another list item"),
         false,
         ease,
-        200
+        400
       );
     } else {
       Valva.insertDiversion(
@@ -181,7 +180,7 @@ divrbtn.addEventListener("click", function () {
         getLi("I'm a list item, again"),
         true,
         ease,
-        200
+        400
       );
     }
   }
@@ -218,20 +217,23 @@ splitFlapbtn.addEventListener("click", function () {
   Valva.splitFlap(splitFlapdiv, text, splitFlapinpt.value);
 });
 
+var wrap = getDiv()
+wrap.append(  getLabel("Animation"),
+select1,
+getLabel("Duration"),
+duratinp,
+getLabel("Delay"),
+delayinp,
+getLabel("Callback"),
+callbackinp,
+tranbtn,
+callbackbox,)
+
 document.body.append(
   getHeader("Vâlvă", 1),
   getHeader("Fade Slide Ease", 2),
   rdnElm,
-  getLabel("Animation"),
-  select1,
-  getLabel("Duration"),
-  duratinp,
-  getLabel("Delay"),
-  delayinp,
-  getLabel("Callback"),
-  callbackinp,
-  tranbtn,
-  callbackbox,
+  wrap,
   getHeader("Append Prepend Replace", 2),
   list,
   select2,
