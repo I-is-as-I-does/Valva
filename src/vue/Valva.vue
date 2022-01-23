@@ -1,12 +1,12 @@
 <template>
-    <div class="valva-transition">
+    <div class="valva">
     <slot :relay="relay"></slot>
 </div>
 </template>
 <script>
 import { vShow, vHide } from '../modules/transitions.js'
 export default {
-  name: 'ValvaShow',
+  name: 'ValvaVeil',
   data(){
       return {
           vtype: 'ease'
